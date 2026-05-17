@@ -64,12 +64,13 @@ Variables defined here become available everywhere in the stylesheet.
     --col-muted: #7ea0b3;
 }
 
-/*
-example usage
-using the var keyword */
-
 body{
-color: var(--col-coral)
+    font-family: 'Instrument Sans', sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    font-style: normal;
 }
 
-
+h1,h2{
+    font-family: 'Young Serif', serif;
+}
