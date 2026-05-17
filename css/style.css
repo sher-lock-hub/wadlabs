@@ -116,3 +116,38 @@ header >b{
     font-size: 0.95em;
 
 }
+nav{
+    margin-top: 20px;
+}
+
+nav ul{
+    list-style: none;
+    /*shorthands*/
+    padding: 0;
+    margin: 0;
+    /*change display element to flex*/
+
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+/* types of selector*/
+nav ul li a{
+    color: var(--col-bg-deep);
+    text-decoration: none;
+    font-size: 1.1em;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+
+    /*what values do the regions have*/
+    padding: 8px 18px;
+    border: 1px solid var(--col-cyan-light); /*shorthand-width,style, color*/
+    border-radius: 8px;
+}
+
+/*pseudo-class selector*/
+nav ul li a:hover{
+    background-color: var(--col-cyan);
+    border-color: var(--col-pink-soft);
+
+}
