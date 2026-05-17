@@ -66,11 +66,53 @@ Variables defined here become available everywhere in the stylesheet.
 
 body{
     font-family: 'Instrument Sans', sans-serif;
-    font-size: 12px;
+    font-size: 16px;
     font-weight: 400;
-    font-style: normal;
+    background-color: var(--col-cream);
+    margin: 0;
+
+    line-height: 1.7;
 }
 
 h1,h2{
     font-family: 'Young Serif', serif;
+}
+
+header{
+    padding-top: 5px;
+    padding-bottom: 20px;
+    text-align: center;
+
+    border-bottom-width: 2px;
+    border-bottom-style: solid;
+    border-bottom-color: var(--col-cyan);
+}
+
+/*h1 is also 
+#mainheading(id)
+.headings(class)
+*/
+headings h1{
+    /*units of measure: absolute- fixed; px,cm,mm,inches(in),points-pt
+    precise control,easy to understand but less responsive on different screens 
+    
+    relative-change based on another value...harder to calculate but respond better to screens and adapt to devices*/
+    font-size: 3.5em; /* 3.5 times 16px....em is relative to parents font size but rem is relative to root font size*/
+    letter-spacing: 8px;
+    text-transform: uppercase;
+    color: var(--col-coral);
+     
+    /* box model*/
+    margin-left: 8px;
+    margin-bottom: 0;
+    margin-top: 0;
+    margin-right: 0;
+}
+
+/*direct child selector*/
+header >b{
+    color: var(--col-sunset);
+    letter-spacing: 2px;
+    font-size: 0.95em;
+
 }
