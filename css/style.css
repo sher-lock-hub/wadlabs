@@ -151,3 +151,52 @@ nav ul li a:hover{
     border-color: var(--col-pink-soft);
 
 }
+main{
+    max-width: 960px;/*responsive 0-960px*/
+
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+section{
+    margin-bottom: 30px;
+    padding: 32px;
+    background-color: var(--col-bg-light);
+    border-radius: 5px;
+    border-left-style: solid;
+    border-left-color: var(--col-coral);
+    border-left-width: 7px;
+
+    /*transitions*/
+    transition-property: border-color;
+    transition-duration: 2s;
+    transition-timing-function: ease;
+}
+
+section:hover{
+    border-left-color: var(--col-cyan);
+}
+
+p{
+    color: var(--col-cream);
+}
+h5{
+    color: var(--col-amber);
+
+}
+
+main b{
+    color: var(--col-coral);
+}
+
+main i{
+    color: var(--col-cyan);
+
+}
+
+h2{
+    color: var(--col-sunset);
+    border-bottom: 1px solid var(--col-amber);
+}
