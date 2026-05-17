@@ -220,3 +220,21 @@ main ul li::marker{
 mainol li::marker{
     color: var(--col-coral);
 }
+
+img{
+    max-width: 100%; /*percentage is usually with respect to parent*/
+    border-radius: 10px;
+
+}
+
+footer{
+    text-align: center;
+}
+
+footer p{
+    color: var(--col-muted);
+}
+
+hr{
+    border: 1px solid var(--col-cyan);
+}
