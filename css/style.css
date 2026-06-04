@@ -92,7 +92,7 @@ header{
 #mainheading(id)
 .headings(class)
 */
-headings h1{
+header h1{
     /*units of measure: absolute- fixed; px,cm,mm,inches(in),points-pt
     precise control,easy to understand but less responsive on different screens 
     
