@@ -123,6 +123,79 @@
             <img src="https://www.rockstargames.com/VI/_next/image?url=%2FVI%2F_next%2Fstatic%2Fmedia%2FJason_and_Lucia_01_With_Logos_landscape.8596f77a.jpg&w=3840&q=75 "
                 alt="GTA 6 Logo Image"  >
         </section>
+        <section id="interactive-lab">
+            <h2>JavaScript DOM and Events Lab</h2>
+            <p>This section has been added so that you can practise DOM selection, manipulation, dynamic element creation, and event handling.</p>
+
+            <div class="lab-grid">
+                <article class="lab-card">
+                    <h4>Activity 1: Change Text and Styles</h4>
+                    <p id="demoText">Click the button to modify this text using JavaScript.</p>
+                    <button id="changeTextBtn" type="button">Change Text</button>
+                    <button id="highlightSectionsBtn" type="button">Highlight Sections</button>
+                    <button id="resetBtn" type="button">Reset Page</button>
+                </article>
+
+                <article class="lab-card">
+                    <h4>Activity 2: Input Event</h4>
+                    <label for="nameInput">Enter your name:</label>
+                    <input type="text" id="nameInput" placeholder="Type your name">
+                    <p id="nameOutput">Your greeting will appear here.</p>
+                </article>
+
+                <article class="lab-card">
+                    <h4>Activity 3: Character Counter</h4>
+                    <label for="commentInput">Write a short GTA VI comment:</label>
+                    <textarea id="commentInput" rows="5" placeholder="Example: I am excited about Vice City..."></textarea>
+                    <p id="charCount">Characters: 0</p>
+                </article>
+
+                <article class="lab-card">
+                    <h4>Activity 4: Keyboard Event</h4>
+                    <p>Press any key on your keyboard.</p>
+                    <p id="keyOutput">You pressed: none</p>
+                </article>
+            </div>
+        </section>
+
+        <section id="dynamic-list-lab">
+            <h2>Dynamic DOM Creation: GTA VI Wishlist</h2>
+            <p>Add items you would like to see in GTA VI. Each new item is created with JavaScript.</p>
+
+            <form id="wishlistForm">
+                <label for="wishlistInput">Wishlist item:</label>
+                <div class="form-row">
+                    <input type="text" id="wishlistInput" placeholder="Example: More realistic traffic">
+                    <button type="submit">Add Item</button>
+                </div>
+            </form>
+
+            <ul id="wishlistItems" class="dynamic-list">
+                <li>More detailed Vice City map <button type="button" class="delete-btn">Delete</button></li>
+            </ul>
+        </section>
+
+        <section id="form-lab">
+            <h2>Form Event: Fan Feedback</h2>
+            <p>This form uses <code>submit</code> and <code>event.preventDefault()</code> to stop the page from refreshing.</p>
+
+            <form id="feedbackForm">
+                <label for="fanName">Name:</label>
+                <input type="text" id="fanName" placeholder="Enter your name" required>
+
+                <label for="fanEmail">Email:</label>
+                <input type="email" id="fanEmail" placeholder="Enter your email" required>
+
+                <label for="fanMessage">Feedback:</label>
+                <textarea id="fanMessage" rows="5" placeholder="Write your feedback" required></textarea>
+
+                <button type="submit">Submit Feedback</button>
+            </form>
+
+            <div id="feedbackOutput" class="output-box">
+                Submitted feedback will appear here.
+            </div>
+        </section>
 
     </main>
 
