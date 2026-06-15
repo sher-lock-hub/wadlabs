@@ -159,3 +159,29 @@ console.log(Object.values(student));
 
 //getting both keys and values of an object as an array
 console.log(Object.entries(student));
+
+/**DOM- Document object model (tree like structure)
+ * programming interface- we can access and update different elements of our page
+ */
+console.log(document);
+
+//Elements on our page(variables
+const heading= document.querySelector("#mainheading");
+console.log(heading);
+const previewImage= document.querySelector("img");
+console.log(previewImage);
+const aboutSection= document.getElementById("about");
+console.log(aboutSection);
+
+//all sections
+const allSections= document.querySelectorAll("section");
+console.log(allSections);
+const allNavLinks= document.querySelectorAll("nav a");
+console.log(allNavLinks);
+
+//getting an element
+let aboutParagraph =document.querySelector("#about p");
+
+//change its text
+aboutParagraph.textContent="This text was changed!";
+aboutParagraph.style.color="red";
