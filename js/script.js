@@ -168,8 +168,7 @@ console.log(document);
 //Elements on our page(variables
 const heading= document.querySelector("#mainheading");
 console.log(heading);
-const previewImage= document.querySelector("img");
-console.log(previewImage);
+
 const aboutSection= document.getElementById("about");
 console.log(aboutSection);
 
@@ -185,3 +184,43 @@ let aboutParagraph =document.querySelector("#about p");
 //change its text
 aboutParagraph.textContent="This text was changed!";
 aboutParagraph.style.color="red";
+
+//setting/setter-updating the page from js via the DOM
+const previewImage= document.querySelector("img"); //queryselector gives the thing that matches the element first like the first element
+console.log(previewImage);
+previewImage.setAttribute("title","New Title of Image");
+previewImage.setAttribute("title","New Alternate text for the Image");
+console.log(previewImage.alt);
+console.log(previewImage.title);
+
+//Event Handling-Events(user events-click,key events,scroll)
+//click btn
+let changeTextBtn=document.querySelector("#changeTextBtn");
+let demoText=document.querySelector("#demoText");
+
+changeTextBtn.addEventListener("click",function(event){
+    console.log("someone clicked me!");
+    demoText.textContent="I have been changed when you clicked!";
+    demoText.style.color="orange";
+    demoText.style.fontSize="16px";
+});
+
+//highlight section
+let highlightSectionsBtn=document.querySelector("#highlightSectionsBtn");
+highlightSectionsBtn.addEventListener("click", function(event){
+    //one
+    document.querySelector("#about").classList.toggle("section-highlight");
+
+    //all
+    //document.querySelectorAll("section").classList.toggle("section-highlight");
+
+    document.querySelectorAll("section").forEach(function(section){
+        section.classList.toggle("section-highlight");
+    });
+});
+
+//textbox
+document.querySelector("#nameInput").addEventListener("input",function(event){
+    document.querySelector("#nameOutput").textContent=
+    "Hello " +document.querySelector("#nameInput").value +"!";
+});
